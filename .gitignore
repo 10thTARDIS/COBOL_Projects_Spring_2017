@@ -47,5 +47,5 @@ Temporary Items
 .apdisk
 
 # Compiler files
-.idy
-.int
+*.idy
+*.int
