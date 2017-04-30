@@ -22,6 +22,8 @@
                            - function integer-of-date (WS-START-DATE).
        
       * DISPLAY CALCULATED VALUES
+       display "RYAN BROOKS".
+       display "RUN ON " WS-CURRENT-DATE.
        display "THERE ARE " WS-DAYS-FROM-END " DAYS UNTIL THE END OF"
                " THE SEMESTER".
        display "THERE HAVE BEEN " WS-DAYS-FROM-START " DAYS SINCE THE"
