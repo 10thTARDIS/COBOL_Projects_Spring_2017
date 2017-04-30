@@ -1,37 +1,37 @@
-       IDENTIFICATION DIVISION.
-       program-id. DATEFUNRB.
-       AUTHOR.     RYAN BROOKS.
-      *DETERMINE NUMBER OF DAYS UNTIL END OF SEMESTER
-       data division.
-       working-storage section.
-       01 WS-START-DATE        pic 9(08)   VALUE 20170116.
-       01 WS-END-DATE          PIC 9(08)   VALUE 20170513.
-       01 WS-CURRENT-DATE      pic 9(08)   VALUE 0.
-       01 WS-DAYS-FROM-START   pic 9(03)   VALUE 0.
-       01 WS-DAYS-FROM-END     pic 9(03)   VALUE 0.
-       01 ANY-KEY              pic X.
-       
-       procedure division.
-       
-      * GET DATE AND PERFORM CALCULATIONS
-       MOVE FUNCTION CURRENT-DATE (1:8) TO WS-CURRENT-DATE.
-       compute WS-DAYS-FROM-END = function integer-of-date (WS-END-DATE)
-                           - function integer-of-date (WS-CURRENT-DATE).
-       compute WS-DAYS-FROM-START = function integer-of-date
-                                    (WS-CURRENT-DATE)
-                           - function integer-of-date (WS-START-DATE).
-       
-      * DISPLAY CALCULATED VALUES
-       display "RYAN BROOKS".
-       display "RUN ON " WS-CURRENT-DATE.
-       display "THERE ARE " WS-DAYS-FROM-END " DAYS UNTIL THE END OF"
-               " THE SEMESTER".
-       display "THERE HAVE BEEN " WS-DAYS-FROM-START " DAYS SINCE THE"
-               " SEMESTER STARTED".
-       display " ".
-       display "PRESS ANY KEY TO EXIT".
-       accept ANY-KEY.
-       
-           goback.
-           
-       end program DATEFUNRB.
+000100 IDENTIFICATION DIVISION.
+000200 program-id. DATEFUNRB.
+000300 AUTHOR.     RYAN BROOKS.
+000400*DETERMINE NUMBER OF DAYS UNTIL END OF SEMESTER
+000500 data division.
+000600 working-storage section.
+000700 01 WS-START-DATE        pic 9(08)   VALUE 20170116.
+000800 01 WS-END-DATE          PIC 9(08)   VALUE 20170513.
+000900 01 WS-CURRENT-DATE      pic 9(08)   VALUE 0.
+001000 01 WS-DAYS-FROM-START   pic 9(03)   VALUE 0.
+001100 01 WS-DAYS-FROM-END     pic 9(03)   VALUE 0.
+001200 01 ANY-KEY              pic X.
+001300 
+001400 procedure division.
+001500 
+001600* GET DATE AND PERFORM CALCULATIONS
+001700 MOVE FUNCTION CURRENT-DATE (1:8) TO WS-CURRENT-DATE.
+001800 compute WS-DAYS-FROM-END = function integer-of-date (WS-END-DATE)
+001900                     - function integer-of-date (WS-CURRENT-DATE).
+002000 compute WS-DAYS-FROM-START = function integer-of-date
+002100                              (WS-CURRENT-DATE)
+002200                     - function integer-of-date (WS-START-DATE).
+002300 
+002400* DISPLAY CALCULATED VALUES
+002500 display "RYAN BROOKS".
+002600 display "RUN ON " WS-CURRENT-DATE.
+002700 display "THERE ARE " WS-DAYS-FROM-END " DAYS UNTIL THE END OF"
+002800         " THE SEMESTER".
+002900 display "THERE HAVE BEEN " WS-DAYS-FROM-START " DAYS SINCE THE"
+003000         " SEMESTER STARTED".
+003100 display " ".
+003200 display "PRESS ANY KEY TO EXIT".
+003300 accept ANY-KEY.
+003400 
+003500     goback.
+003600     
+003700 end program DATEFUNRB.
