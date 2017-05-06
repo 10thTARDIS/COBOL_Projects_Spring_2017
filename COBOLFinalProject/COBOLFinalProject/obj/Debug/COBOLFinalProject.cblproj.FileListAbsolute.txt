@@ -1,0 +1,5 @@
+C:\Users\Ryan\documents\visual studio 2015\Projects\COBOLFinalProject\COBOLFinalProject\bin\Debug\COBOLFinalProject.exe
+C:\Users\Ryan\documents\visual studio 2015\Projects\COBOLFinalProject\COBOLFinalProject\bin\Debug\COBOLFinalProject.pdb
+C:\Users\Ryan\documents\visual studio 2015\Projects\COBOLFinalProject\COBOLFinalProject\obj\Debug\COBOLFinalProject.exe
+C:\Users\Ryan\documents\visual studio 2015\Projects\COBOLFinalProject\COBOLFinalProject\obj\Debug\COBOLFinalProject.pdb
+C:\Users\Ryan\documents\visual studio 2015\Projects\COBOLFinalProject\COBOLFinalProject\obj\Debug\COBOLFinalProject.cblprojResolveAssemblyReference.cache
